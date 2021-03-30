@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<title>Tetris</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<h1>Tetris</h1>
+
+	<div class="grid">
+		<canvas id="tetris" width="240" height="400"></canvas>
+		<div class="sidebar-right">
+			<span>score</span>
+			<div id="score"></div>
+
+			<button id="other_piece" class="btn" onclick="playerReset()">
+				other piece
+			</button>
+
+			<button id="reset" class="btn" onclick="update()">
+				reset
+			</button>
+
+			<button id="pause" class="btn">
+					pause
+			</button>
+		</div>
+	</div>
+	<!-- Js files -->
+	<script src="tetris.js"></script>
+</body>
+</html>
